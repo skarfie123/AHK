@@ -32,6 +32,6 @@ Return
 ::linkedin::
    Send, https://www.linkedin.com/in/rahul-pai-224b5a182/
 Return
-::github::
+::ggithub::
    Send, https://github.com/skarfie123
 Return
