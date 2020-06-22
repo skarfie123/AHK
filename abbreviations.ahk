@@ -23,6 +23,9 @@ Return
 ::rgmail::
    Send, rahulpaicreations@gmail.com
 Return
+::halmail::
+   Send, r.pai@hal-robotics.com
+Return
 ::hosts::
    Send, c:\windows\system32\drivers\etc\hosts
 Return
