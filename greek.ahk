@@ -7,9 +7,9 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ::\\gamma::γ
 ::\\delta::δ
 ::\\epsilon::ε
-::\\zêta::ζ
-::\\êta::η
-::\\thêta::θ
+::\\zeta::ζ
+::\\eta::η
+::\\theta::θ
 ::\\iota::ι
 ::\\kappa::κ
 ::\\lambda::λ
