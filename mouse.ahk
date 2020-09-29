@@ -30,3 +30,6 @@ XButton2::Media_Prev
 #IfWinActive ahk_exe explorer.exe
 XButton1::XButton2
 XButton2::XButton1
+#IfWinActive ahk_exe FOXITREADER.EXE
+XButton1::^Tab
+XButton2::^+Tab
