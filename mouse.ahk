@@ -6,7 +6,16 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 #IfWinActive ahk_exe notepad++.exe
 XButton1::^PgDn
 XButton2::^PgUp
+#IfWinActive ahk_exe texstudio.exe
+XButton1::^PgDn
+XButton2::^PgUp
+#IfWinActive ahk_exe Code.exe
+XButton1::^PgDn
+XButton2::^PgUp
 #IfWinActive ahk_exe chrome.exe
+XButton1::^Tab
+XButton2::^+Tab
+#IfWinActive ahk_exe ApplicationFrameHost.exe
 XButton1::^Tab
 XButton2::^+Tab
 #IfWinActive ahk_exe acrord32.exe ;acrobat
