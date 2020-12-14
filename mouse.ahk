@@ -12,7 +12,13 @@ XButton2::^PgUp
 #IfWinActive ahk_exe Code.exe
 XButton1::^PgDn
 XButton2::^PgUp
+#IfWinActive ahk_exe tuxguitar.exe
+XButton1::^PgDn
+XButton2::^PgUp
 #IfWinActive ahk_exe chrome.exe
+XButton1::^Tab
+XButton2::^+Tab
+#IfWinActive ahk_exe javaw.exe ; FreeMind
 XButton1::^Tab
 XButton2::^+Tab
 #IfWinActive ahk_exe ApplicationFrameHost.exe
