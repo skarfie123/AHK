@@ -5,23 +5,41 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 #SingleInstance force
 
-; This was made from baby's_first_extra_keyboard.ahk
+; F22 is PgDn and F23 is PgUp on the ammoon
 
-;________________________________________________________________________________________
-;                                                                                        
-;		    2ND KEYBOARD USING INTERCEPTION AND INTERCEPT.exe (Logitech K120)            
-;________________________________________________________________________________________
-
-; Please watch https://www.youtube.com/watch?v=y3e_ri-vOIo for a comprehensive tutorial. 
-;________________________________________________________________________________________
-;
-;  The full script is FULL_extra_keyboard.ahk , but please try this script first, as it is
-;  an important part of the tutorial.
-
-#if (getKeyState("F23", "P"))
-F23::return
-
-PgUp::msgbox, you pressed %A_thishotkey% on the ammoon
-PgDn::msgbox, you pressed %A_thishotkey% on the ammoon
-
-#if
+#IfWinActive ahk_exe notepad++.exe
+F23::^PgDn
+F22::^PgUp
+#IfWinActive ahk_exe texstudio.exe
+F23::^PgDn
+F22::^PgUp
+#IfWinActive ahk_exe Code.exe
+F23::^PgDn
+F22::^PgUp
+#IfWinActive ahk_exe tuxguitar.exe
+F23::^PgDn
+F22::^PgUp
+#IfWinActive ahk_exe chrome.exe
+F23::^Tab
+F22::^+Tab
+#IfWinActive ahk_exe javaw.exe ; FreeMind
+F23::^Tab
+F22::^+Tab
+#IfWinActive ahk_exe ApplicationFrameHost.exe
+F23::^Tab
+F22::^+Tab
+#IfWinActive ahk_exe acrord32.exe ;acrobat
+F23::^Tab
+F22::^+Tab
+#IfWinActive ahk_exe powerpnt.exe
+F23::Right
+F22::Left
+#IfWinActive ahk_exe spotify.exe
+F23::Media_Next
+F22::Media_Prev
+#IfWinActive ahk_exe explorer.exe
+F23::XButton2
+F22::XButton1
+#IfWinActive ahk_exe FOXITREADER.EXE
+F23::^Tab
+F22::^+Tab
