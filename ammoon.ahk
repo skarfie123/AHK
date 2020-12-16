@@ -5,41 +5,57 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 #SingleInstance force
 
-; F22 is PgDn and F23 is PgUp on the ammoon
+; F13 - PgUp
+; F14 - PgDn
+; F15 - Left
+; F16 - Right
+; F17 - Up
+; F18 - Down
+; F19 - Space
+; F20 - Enter
 
 #IfWinActive ahk_exe notepad++.exe
-F23::^PgDn
-F22::^PgUp
+F14::^PgDn
+F13::^PgUp
 #IfWinActive ahk_exe texstudio.exe
-F23::^PgDn
-F22::^PgUp
+F14::^PgDn
+F13::^PgUp
 #IfWinActive ahk_exe Code.exe
-F23::^PgDn
-F22::^PgUp
+F14::^PgDn
+F13::^PgUp
 #IfWinActive ahk_exe tuxguitar.exe
-F23::^PgDn
-F22::^PgUp
+F14::^PgDn
+F13::^PgUp
 #IfWinActive ahk_exe chrome.exe
-F23::^Tab
-F22::^+Tab
+F14::^Tab
+F13::^+Tab
 #IfWinActive ahk_exe javaw.exe ; FreeMind
-F23::^Tab
-F22::^+Tab
-#IfWinActive ahk_exe ApplicationFrameHost.exe
-F23::^Tab
-F22::^+Tab
+F14::^Tab
+F13::^+Tab
+#IfWinActive ahk_exe ApplicationFrameHost.exe ; Drawboard
+F14::^Tab
+F13::^+Tab
 #IfWinActive ahk_exe acrord32.exe ;acrobat
-F23::^Tab
-F22::^+Tab
+F14::^Tab
+F13::^+Tab
 #IfWinActive ahk_exe powerpnt.exe
-F23::Right
-F22::Left
+F14::Right
+F13::Left
 #IfWinActive ahk_exe spotify.exe
-F23::Media_Next
-F22::Media_Prev
+F14::Media_Next
+F13::Media_Prev
 #IfWinActive ahk_exe explorer.exe
-F23::XButton2
-F22::XButton1
+F14::XButton2
+F13::XButton1
 #IfWinActive ahk_exe FOXITREADER.EXE
-F23::^Tab
-F22::^+Tab
+F14::^Tab
+F13::^+Tab
+#IfWinActive
+F13::PgUp
+F14::PgDn
+F15::Left
+F16::Right
+F17::Up
+F18::Down
+F19::Space
+F20::Enter

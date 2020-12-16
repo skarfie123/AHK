@@ -23,7 +23,7 @@ XButton2::^+Tab
 #IfWinActive ahk_exe javaw.exe ; FreeMind
 XButton1::^Tab
 XButton2::^+Tab
-#IfWinActive ahk_exe ApplicationFrameHost.exe
+#IfWinActive ahk_exe ApplicationFrameHost.exe ; Drawboard
 XButton1::^Tab
 XButton2::^+Tab
 #IfWinActive ahk_exe acrord32.exe ;acrobat
