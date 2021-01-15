@@ -29,6 +29,8 @@ F13::^PgUp
 #IfWinActive ahk_exe chrome.exe
 F14::^Tab
 F13::^+Tab
+F19::d
+F20::f
 #IfWinActive ahk_exe javaw.exe ; FreeMind
 F14::^Tab
 F13::^+Tab
