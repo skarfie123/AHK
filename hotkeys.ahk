@@ -1,6 +1,7 @@
 ﻿#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 ; #Warn  ; Enable warnings to assist with detecting common errors.
 EnvGet, dl, DOWNLOADS
+EnvGet, gg, GITHUB
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
@@ -10,9 +11,10 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
    Send, "^V" { }
 Return
 
-;#IfWinActive ahk_exe explorer.exe
 #j::
-Run, explorer.exe %dl%
-;WinActivate, Untitled - Notepad
-;WinWaitActive, Untitled - Notepad
+Run, "C:\Program Files (x86)\FreeCommander XE\FreeCommander.exe" /C /T /L=%dl%
+return
+
+#g::
+Run, "C:\Program Files (x86)\FreeCommander XE\FreeCommander.exe" /C /T /L=%gg%
 return
