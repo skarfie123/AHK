@@ -5,39 +5,14 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 #SingleInstance force
 
-::btw::
-   Send, by the way
-Return
-::lennyface::
-   Send, ( ͡° ͜ʖ ͡°)
-Return
-::shrugg::
-   Send, ¯\_(ツ)_/¯
-Return
-::rocketmail::
-   Send, rahulpai@rocketmail.com
-Return
-::sgmail::
-   Send, skarfant@gmail.com
-Return
-::rapcam::
-   Send, rap64@cam.ac.uk
-Return
-::rgmail::
-   Send, rahulpaicreations@gmail.com
-Return
-::halmail::
-   Send, r.pai@hal-robotics.com
-Return
-::hosts::
-   Send, c:\windows\system32\drivers\etc\hosts
-Return
-::biodegradeable::
-   Send, biodegradable
-Return
-::linkedin::
-   Send, https://www.linkedin.com/in/rahul-pai-224b5a182/
-Return
-::ggithub::
-   Send, https://github.com/skarfie123
-Return
+::btw::by the way
+:o:lennyface::( ͡° ͜ʖ ͡°)
+:o:shrugg::¯\_(ツ)_/¯
+:o:rocketmail::rahulpai@rocketmail.com
+:o:sgmail::skarfant@gmail.com
+:o:rapcam::rap64@cam.ac.uk
+:o:rgmail::rahulpaicreations@gmail.com
+:o:halmail::r.pai@hal-robotics.com
+:o:hosts::c:\windows\system32\drivers\etc\hosts
+:o:linkedin::https://www.linkedin.com/in/rahul-pai-224b5a182/
+:o:ggithub::https://github.com/skarfie123
