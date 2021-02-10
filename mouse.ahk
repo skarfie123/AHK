@@ -20,6 +20,9 @@ XButton2::^PgUp
 #IfWinActive ahk_exe chrome.exe
 XButton1::^Tab
 XButton2::^+Tab
+#IfWinActive ahk_exe WindowsTerminal.exe
+XButton1::^Tab
+XButton2::^+Tab
 #IfWinActive ahk_exe FreeCommander.exe
 XButton1::^Tab
 XButton2::^+Tab
