@@ -12,9 +12,25 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 Return
 
 #j::
-Run, "C:\Program Files (x86)\FreeCommander XE\FreeCommander.exe" /C /T /L=%dl%
+    Run, "C:\Program Files (x86)\FreeCommander XE\FreeCommander.exe" /C /T /L=%dl%
 return
 
 #g::
-Run, "C:\Program Files (x86)\FreeCommander XE\FreeCommander.exe" /C /T /L=%gg%
+    Run, "C:\Program Files (x86)\FreeCommander XE\FreeCommander.exe" /C /T /L=%gg%
+return
+
+#e::
+if WinExist("ahk_exe FreeCommander.exe ahk_class FreeCommanderXE.SingleInst.1")
+{
+    WinRestore
+    WinActivate
+    return
+}
+else
+{
+    Run, "C:\Program Files (x86)\FreeCommander XE\FreeCommander.exe"
+    WinWait ahk_exe FreeCommander.exe ahk_class FreeCommanderXE.SingleInst.1
+    WinActivate
+    return
+}
 return
