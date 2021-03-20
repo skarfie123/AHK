@@ -12,7 +12,6 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 :*o:sgmail::skarfant@gmail.com
 :*o:rapcam::rap64@cam.ac.uk
 :*o:rgmail::rahulpaicreations@gmail.com
-:*o:halmail::r.pai@hal-robotics.com
 :*o:hhosts::c:\windows\system32\drivers\etc\hosts
-:*o:linkedin::https://www.linkedin.com/in/rahul-pai-224b5a182/
+:*o:llinkedin::https://www.linkedin.com/in/r-pai/
 :*o:ggithub::https://github.com/skarfie123
