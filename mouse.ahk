@@ -47,3 +47,4 @@ XButton2::XButton1
 #IfWinActive ahk_exe FOXITREADER.EXE
 XButton1::^Tab
 XButton2::^+Tab
+#IfWinActive
