@@ -131,3 +131,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 :*?:(c)::©
 :*?:(r)::®
 :*?:\\tm::™
+:*?:\\esc::
+    clipboard := ""
+    Send, ^v
+Return

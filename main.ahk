@@ -10,4 +10,4 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 #Include, ammoon.ahk
 #Include, hotkeys.ahk
 #Include, mouse.ahk
-#Include, unicode.ahk
+#Include, characters.ahk
