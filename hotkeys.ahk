@@ -20,17 +20,51 @@ return
 return
 
 #e::
-if WinExist("ahk_exe FreeCommander.exe ahk_class FreeCommanderXE.SingleInst.1")
-{
-    WinRestore
-    WinActivate
-    return
-}
-else
-{
-    Run, "C:\Program Files (x86)\FreeCommander XE\FreeCommander.exe"
-    WinWait ahk_exe FreeCommander.exe ahk_class FreeCommanderXE.SingleInst.1
-    WinActivate
-    return
-}
+    if WinExist("ahk_exe FreeCommander.exe ahk_class FreeCommanderXE.SingleInst.1")
+    {
+        WinRestore
+        WinActivate
+        return
+    }
+    else
+    {
+        Run, "C:\Program Files (x86)\FreeCommander XE\FreeCommander.exe"
+        WinWait ahk_exe FreeCommander.exe ahk_class FreeCommanderXE.SingleInst.1
+        WinActivate
+        return
+    }
 return
+
+AppsKey::#Space ; PowerToys Run
+
+AppsKey & .::
+    if WinExist("ahk_exe Code.exe")
+    {
+        WinMaximize
+        WinActivate
+        return
+    }
+    else
+    {
+        Run, code
+        WinWait ahk_exe Code.exe
+        WinActivate
+        return
+    }
+Return
+
+>^.::
+    if WinExist("ahk_exe WindowsTerminal.exe")
+    {
+        WinRestore
+        WinActivate
+        return
+    }
+    else
+    {
+        Run, cmd /C home & wt
+        WinWait ahk_exe WindowsTerminal.exe
+        WinActivate
+        return
+    }
+Return
