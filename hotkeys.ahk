@@ -46,7 +46,7 @@ AppsKey & .::
     }
     else
     {
-        Run, code
+        Run, "C:\Program Files\Microsoft VS Code\Code.exe"
         WinWait ahk_exe Code.exe
         WinActivate
         return
