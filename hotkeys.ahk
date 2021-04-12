@@ -7,6 +7,11 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 #SingleInstance force
 
+; #	Win
+; !	Alt
+; ^	Ctrl
+; +	Shift
+
 +^q::
    Send, "^V" { }
 Return
@@ -33,6 +38,10 @@ return
         WinActivate
         return
     }
+return
+
+#+e::
+    Run, explorer
 return
 
 AppsKey::#Space ; PowerToys Run
