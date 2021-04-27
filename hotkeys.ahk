@@ -7,6 +7,13 @@
    Send, "^V" { }
 Return
 
+#a::
+    ToolTip, Reloading AHK
+    Sleep, 1000
+    ToolTip
+    Reload
+Return
+
 #j::
     Run, cmd /c fe %dl%
 Return
