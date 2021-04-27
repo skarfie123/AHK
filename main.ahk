@@ -11,3 +11,6 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 #Include, hotkeys.ahk
 #Include, mouse.ahk
 #Include, characters.ahk
+#Include, numpad.ahk
+#Include, fkeys.ahk
+#Include, locks.ahk
