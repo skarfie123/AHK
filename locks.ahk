@@ -1,15 +1,12 @@
 LockToolTip(lock){
     num := GetKeyState(lock, "T")
-    CoordMode, ToolTip
-    Y := A_ScreenHeight - 30
     If (num == 1){
-        ToolTip, %lock%: On, 10, %Y%
+        message=%lock%: On
     }
-    If (num == 0){
-        ToolTip, %lock%: Off, 10, %Y%
+    Else {
+        message=%lock%: Off
     }
-    Sleep, 1000
-    ToolTip
+    Toast(message)
 }
 
 ~NumLock::LockToolTip("NumLock")

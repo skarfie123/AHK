@@ -8,9 +8,7 @@
 Return
 
 #a::
-    ToolTip, Reloading AHK
-    Sleep, 1000
-    ToolTip
+    Toast("Reloading AHK")
     Reload
 Return
 
