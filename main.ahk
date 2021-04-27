@@ -6,6 +6,8 @@ SendMode Input  ; Recommended for new scripts due to its superior speed and reli
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 #SingleInstance force
 
+Toast("Reloading AHK")
+
 #Include, abbreviations.ahk
 #Include, ammoon.ahk
 #Include, hotkeys.ahk

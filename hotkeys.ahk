@@ -8,7 +8,6 @@
 Return
 
 #a::
-    Toast("Reloading AHK")
     Reload
 Return
 
