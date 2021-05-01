@@ -17,3 +17,4 @@ Toast("Reloading AHK")
 #Include, fkeys.ahk
 #Include, locks.ahk
 #Include, toast.ahk
+#Include, spellcheck.ahk
