@@ -39,6 +39,21 @@ Return
     Run, explorer
 Return
 
+#Home::
+    Run, Mail.lnk
+    Toast("Mail")
+Return
+#PgUp::
+    Run, Calendar.lnk
+    Toast("Calendar")
+Return
+#PgDn::
+    Toast("Not Yet Assigned")
+Return
+#End::
+    Toast("Not Yet Assigned")
+Return
+
 AppsKey::#Space ; PowerToys Run
 
 AppsKey & .::
