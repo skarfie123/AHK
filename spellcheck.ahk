@@ -1,7 +1,10 @@
+::arent::aren't
 ::cant::can't
 ::couldnt::couldn't
 ::darent::daren't
+::didnt::didn't
 ::dont::don't
+::hadnt::hadn't
 ::havent::haven't
 ::hed::he'd
 ::hes::he's
@@ -12,8 +15,11 @@
 ::neednt::needn't
 ::shes::she's
 ::theyd::they'd
+::theres::there's
 ::theyre::they're
 ::theyve::they've
+::wasnt::wasn't
+::werent::weren't
 ::weve::we've
 ::wont::won't
 ::wouldnt::wouldn't
