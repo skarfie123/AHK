@@ -18,3 +18,4 @@ Toast("Reloading AHK")
 #Include, locks.ahk
 #Include, toast.ahk
 #Include, spellcheck.ahk
+#Include, apps.ahk

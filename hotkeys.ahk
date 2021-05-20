@@ -20,70 +20,38 @@ Return
 Return
 
 #e::
-    if WinExist("ahk_exe FreeCommander.exe ahk_class FreeCommanderXE.SingleInst.1")
-    {
-        WinRestore
-        WinActivate
-        Return
-    }
-    else
-    {
-        Run, "C:\Program Files (x86)\FreeCommander XE\FreeCommander.exe"
-        WinWait ahk_exe FreeCommander.exe ahk_class FreeCommanderXE.SingleInst.1
-        WinActivate
-        Return
-    }
+    FreeCommander()
 Return
 
 #+e::
     Run, explorer
 Return
 
-#Home::
+<^>!Home::
     Run, Mail.lnk
     Toast("Mail")
 Return
-#PgUp::
+<^>!PgUp::
     Run, Calendar.lnk
     Toast("Calendar")
 Return
-#PgDn::
-    Toast("Not Yet Assigned")
+<^>!PgDn::
+    VSCode()
+    Toast("VS Code")
 Return
-#End::
-    Toast("Not Yet Assigned")
+<^>!End::
+    WindowsTerminal()
+    Toast("Windows Terminal")
 Return
 
 AppsKey::#Space ; PowerToys Run
 
 AppsKey & .::
-    if WinExist("ahk_exe Code.exe")
-    {
-        WinMaximize
-        WinActivate
-        Return
-    }
-    else
-    {
-        Run, "C:\Program Files\Microsoft VS Code\Code.exe"
-        WinWait ahk_exe Code.exe
-        WinActivate
-        Return
-    }
+    VSCode()
+    Toast("VS Code")
 Return
 
 >^.::
-    if WinExist("ahk_exe WindowsTerminal.exe")
-    {
-        WinRestore
-        WinActivate
-        Return
-    }
-    else
-    {
-        Run, cmd /C "home & wth"
-        WinWait ahk_exe WindowsTerminal.exe
-        WinActivate
-        Return
-    }
+    WindowsTerminal()
+    Toast("Windows Terminal")
 Return
