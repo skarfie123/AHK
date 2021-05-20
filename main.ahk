@@ -19,3 +19,4 @@ Toast("Reloading AHK")
 #Include, toast.ahk
 #Include, spellcheck.ahk
 #Include, apps.ahk
+#Include, randomCase.ahk
