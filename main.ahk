@@ -20,3 +20,4 @@ Toast("Reloading AHK")
 #Include, spellcheck.ahk
 #Include, apps.ahk
 #Include, randomCase.ahk
+#Include, vlc.ahk
