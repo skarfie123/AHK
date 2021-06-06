@@ -23,15 +23,15 @@ NumpadRight::
     Toast("Not Yet Assigned")
 Return
 NumpadHome::
-    Send, !+^{Numpad7}
+    Send, !+^{F19}
     Toast("Join Desktop - Previous Song")
 Return
 NumpadUp::
-    Send, !+^{Numpad8}
+    Send, !+^{F20}
     Toast("Join Desktop - Play/Pause")
 Return
 NumpadPgUp::
-    Send, !+^{Numpad9}
+    Send, !+^{F21}
     Toast("Join Desktop - Skip Song")
 Return
 NumpadIns::
