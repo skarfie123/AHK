@@ -44,7 +44,7 @@ Return
     Toast("Windows Terminal")
 Return
 
-AppsKey::#Space ; PowerToys Run
+AppsKey::#r ; PowerToys Run
 
 AppsKey & .::
     VSCode()
