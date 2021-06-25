@@ -37,7 +37,7 @@ WindowsTerminal(){
     }
     else
     {
-        Run, cmd /C "home & wth"
+        Run, wt
         WinWait ahk_exe WindowsTerminal.exe
         WinActivate
         Return
