@@ -12,11 +12,11 @@ Return
 Return
 
 #j::
-    Run, cmd /c fe %dl%
+    Run, pwsh -c fe %dl%
 Return
 
 #g::
-    Run, cmd /c fe %git%
+    Run, pwsh -c fe %git%
 Return
 
 #e::
