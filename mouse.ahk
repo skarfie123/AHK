@@ -31,6 +31,9 @@ XButton2::^+Tab
 #IfWinActive ahk_exe acrord32.exe ;acrobat
 XButton1::^Tab
 XButton2::^+Tab
+#IfWinActive ahk_exe Acrobat.exe
+XButton1::^Tab
+XButton2::^+Tab
 #IfWinActive ahk_exe powerpnt.exe
 XButton1::Right
 XButton2::Left
