@@ -4,7 +4,7 @@
 ; +	Shift
 
 +^q::
-   Send, "^V" { }
+    Send, "^V" { }
 Return
 
 #a::
@@ -28,11 +28,11 @@ Return
 Return
 
 <^>!Home::
-    Run, Mail.lnk
+    Run, Mail.lnk ; drag from start menu to AHK folder
     Toast("Mail")
 Return
 <^>!PgUp::
-    Run, Calendar.lnk
+    Run, Calendar.lnk ; drag from start menu to AHK folder
     Toast("Calendar")
 Return
 <^>!PgDn::
@@ -44,7 +44,7 @@ Return
     Toast("Windows Terminal")
 Return
 
-AppsKey::#r ; PowerToys Run
+AppsKey::!Space ; PowerToys Run
 
 AppsKey & .::
     VSCode()
@@ -54,4 +54,15 @@ Return
 >^.::
     WindowsTerminal()
     Toast("Windows Terminal")
+Return
+
+~#`::
+    Send, #`
+    WinWait, ahk_exe WindowsTerminal.exe,, 1
+    if ErrorLevel
+    {
+        Send, {BackSpace}
+        Run, pwsh -c "home && wtq`"
+    }
+    Toast("Quake")
 Return
