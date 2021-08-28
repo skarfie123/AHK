@@ -27,6 +27,10 @@ Return
     Run, explorer
 Return
 
+#y::
+    Run, "C:\Program Files\Bitwarden\Bitwarden.exe"
+Return
+
 <^>!Home::
     Run, Mail.lnk ; drag from start menu to AHK folder
     Toast("Mail")
