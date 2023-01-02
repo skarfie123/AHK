@@ -127,10 +127,11 @@
 :*?:\\bullet::•
 :*?:\\dot::·
 :*?:\\inf::∞
-:*?:\\esc::
-    old := clipboard
-    clipboard := ""
-    Send, ^v
-    Sleep, 100
-    clipboard := old
+:*?:\\esc:: {
+    old := A_Clipboard
+    A_Clipboard := ""
+    Send "^v"
+    Sleep 100
+    A_Clipboard := old
+}
 Return
